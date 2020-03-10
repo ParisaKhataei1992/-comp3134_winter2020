@@ -1,0 +1,4 @@
+What you see on the browser (the issue) =  all the root directory will show 
+
+
+What sensitive information is given by this page = it will show the construction information

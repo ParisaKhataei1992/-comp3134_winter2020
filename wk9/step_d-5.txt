@@ -1,0 +1,2 @@
+• What you see on the browser (the issue) =  i could just see my html file in my array
+• What sensitive information is given by this page = it probebly just a ui Information
