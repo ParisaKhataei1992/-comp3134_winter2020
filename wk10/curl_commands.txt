@@ -1,17 +1,9 @@
-1) Send a GET request to dictionary.com to search for the word “curl”
-A) https://www.dictionary.com/browse/curl
+1) curl -X GET 'https://www.dictionary.com/browse/curl'
 
-2) Send a GET request to dictionary.com to search for the word “curlxyz”
-A) https://www.dictionary.com/browse/curlxyz
+2) curl -X GET 'https://www.dictionary.com/browse/curlxyz'
 
-3) Send a GET request to {Your droplet IP}/sending_info_to_app_1.php to submit the query
-“helloworld”
-A)http://157.245.94.33/sending_info_to_app_1.php?q=helloworld
+3) curl -X GET 'http://138.197.163.108/sending_info_to_app_1.php?q=helloworld'
 
-4) Send a GET request to {Your droplet IP}/sending_info_to_app_1.php to submit the query
-“<script>document.write(‘overwrite_everything’)</script>”
-A)http://157.245.94.33/sending_info_to_app_1.php?q=<script>document.write(‘overwrite_everything’)</script>'
+4) curl -X GET 'http://138.197.163.108/sending_info_to_app_1.php?q=<script>document.write(‘overwrite_everything’)</script>'
 
-5) Send a GET request to {Your droplet IP}/sending_info_to_app_2.php to submit the query
-“<script>document.write(‘overwrite_everything’)</script>”
-A)http://157.245.94.33/sending_info_to_app_2.php?q=<script>document.write(‘overwrite_everything’)</script>'
+5) curl -X GET 'http://138.197.163.108/sending_info_to_app_2.php?q=<script>document.write(‘overwrite_everything’)</script>'
