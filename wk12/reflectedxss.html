@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head lang="en">
-    <meta charset="UTF-8">
-        <script language="JavaScript">
-            function showInput() {
-                document.getElementById('display').innerHTML = 
-                            document.getElementById("user_input").value;
-            }
-        </script>
+<h1>Reflected XSS</h1>
 
-        
-    </head>
-    <body>
-    <h1>Reflected XSS</h1>
-    <form>
-        <input type="text" name="message" id="user_input">
-    </form>
+<form id="myForm">
+    <input type="text" name="myInput" id="myInput">
+    <input type="submit" onclick="msg();">
+</form>
 
-    <input type="submit" onclick="showInput();"><br/>
+<div id="msg"></div>
 
-    <div><span id='display'></span></div>
-    </body>
-</html>
+
+<script>
+    document.getElementById("myForm").addEventListener("click", function(event){
+        event.preventDefault()
+    });
+
+    function msg() {
+        document.getElementById('msg').innerHTML = document.getElementById("myInput").value;
+    }
+</script>

@@ -17,10 +17,10 @@
 <?php
 
     if ($_POST['username'] == 'host' && $_POST['pword'] == 'pass'){
-        print "Access Granted!";
+        print "Access susccesfull";
     }
     else{
-        print "Access Denied...";
+        print "Access Denied";
     }
 ?>
 
